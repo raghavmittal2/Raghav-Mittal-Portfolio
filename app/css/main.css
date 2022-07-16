@@ -1,6 +1,7 @@
 *, *::before, *::after {
     margin: 0;
     padding: 0;
+    /*border: 1px solid black;*/
 }
 
 html {
@@ -12,9 +13,67 @@ body {
     background-color: white;
     font-family: 'Montserrat', Georgia;
     font-size: 1.8rem;
+    overflow: contain;
+}
+
+#nav-bar {
+    width: 100%; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
 }
 
 #logo {
     text-decoration: underline;
-    padding: 3.2em 0rem 3.2em 3.6em;
+    padding: 3.2em 3.6em 3.2em 3.6em;
+}
+
+#nav-bar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 3.2em 3.6em; 
+}
+
+.nav-item:last-of-type {
+    margin-right: none;
+}
+
+.nav-item {
+    margin-right: 2em;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+section {
+    padding: 3.2em 3.6em 3.2em 3.6em;
+}
+
+#about {
+    background: linear-gradient(45deg,lightpink, lightblue, lightyellow);
+    height: 87vh;
+}
+
+#about div{
+    padding-block: 3vh;
+    text-align: center;
+    position: absolute;
+    top: 50%; 
+    left: 10%; 
+    right : 10%; 
+}
+
+#about div h1 {
+    font-size: 3.6rem;
+}
+
+#about div p {
+    margin-block: 0.8em; 
+    font-style: italic;
 }
